@@ -64,7 +64,7 @@ Replace "Artist Name" and "Album Title" with the desired artist and album names.
 To fetch album art for "The Dark Side of the Moon" by Pink Floyd:
 
 ```bash
-python get-album-art.py --artist="Pink Floyd" --album="The Dark Side of the Moon"
+python fetch-album-art.py --artist="Pink Floyd" --album="The Dark Side of the Moon"
 ```
 
 ## License
