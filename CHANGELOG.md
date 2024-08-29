@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
-- Initial release of the script to fetch album art
 - Support for Spotify and Apple Music
 - Support for creating an `images` directory with `apple` and `spotify` subdirectories
 - Update `requirements.txt` for new dependencies
+- Initial release of the script to fetch album art
