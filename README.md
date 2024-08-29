@@ -49,22 +49,34 @@ This script can be used to enhance your music collection with high-quality album
     pip install -r requirements.txt
     ```
 
+
+5. **Set Up Environment Variables (for Spotify)**
+
+   If you plan to use the Spotify service, you need to create a `.env` file in the project root directory with your Spotify API credentials:
+
+   ```
+   SPOTIFY_CLIENT_ID=your_spotify_client_id
+   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+   ```
+
+   Replace `your_spotify_client_id` and `your_spotify_client_secret` with your actual Spotify API credentials.
+
 ## Usage
 
 Using the script consists of adding the following in your terminal:
 
 ```bash
-python fetch-album-art.py --artist="Artist Name" --album="Album Title"
+python fetch-album-art.py --artist="Artist Name" --album="Album Title" --service="apple"
 ```
 
-Replace "Artist Name" and "Album Title" with the desired artist and album names.
+Replace "Artist Name" and "Album Title" with the desired artist and album names. If you want to use Spotify, then replace "apple" with "spotify" in the `--service` parameter.
 
 ## Example
 
 To fetch album art for "The Dark Side of the Moon" by Pink Floyd:
 
 ```bash
-python fetch-album-art.py --artist="Pink Floyd" --album="The Dark Side of the Moon"
+python fetch-album-art.py --artist="Pink Floyd" --album="The Dark Side of the Moon" --servicce="apple"
 ```
 
 ## License
@@ -73,4 +85,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Thanks to the [Apple](https://itunes.apple.com/search) for providing the album art API.
+Thanks to the following APIs:
+* [Apple](https://itunes.apple.com/search)
+* [Spotify API](https://developer.spotify.com/documentation/web-api/)
